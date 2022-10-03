@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 :root {
     --white: #ffff;
     --purple: #B06AB3;
     --purpleblue: #4568DC;
     --blue: #4798a3;
+    --cream: #c6c6c6;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -22,7 +23,6 @@ body {
     height: 100vh;
 }
 
-
 #container{
     background: var(--white);
     padding: 38px 27px 45px;
@@ -31,7 +31,6 @@ body {
     width: 90%;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
 }
-
 
 .boxes {
     width: 100%;
@@ -56,7 +55,7 @@ input {
     display: block;
     width: 100%;
     padding: 5% 1%;
-    color: #c6c6c6;
+    color: var(--cream);
 }
 
 input:focus {
@@ -110,5 +109,3 @@ button {
     width: 100%;
     color: rgb(233, 19, 19);
 }
-
-

@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
     formName.value == "" ||
     formName.value == null
   ) {
-    auxWarning += `The name isn't valid or empty! <br>`;
+    warning.innerHTML += `<p>The name isn't valid or empty! </p>`;
     error = true;
   }
 
@@ -25,18 +25,16 @@ form.addEventListener("submit", (e) => {
     email.value == "" ||
     email.value == null
   ) {
-    auxWarning += `The email is invalid or empty! <br>`;
+    warning.innerHTML += `<p>The email is invalid or empty.</p>`;
     error = true;
   }
 
-  if (password.value.length < 8 || password.value == "" || password.value) {
-    auxWarning += `The password is too short or empty.<br>`;
+  if (password.value.length < 8 || password.value == "" || password.value == null) {
+    warning.innerHTML += `<p>The password is too short or empty.</p>`;
     error = true;
   }
 
-  if (error) {
-    warning.innerHTML = auxWarning;
-  } else {
-    warning.innerText = "Successfully Submited";
+  if (!error) {
+    warning.innerHTML = `<p style="color:black">Successfully Submited</p>`;
   }
 });
